@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-display: swap;
+  background: linear-gradient(320deg, #FF7ED4, #FF3EA5, #6420AA);
+}
+
+.wrapper {
+  height: 540px;
+  padding: 20px 35px;
+  flex-basis: 400px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.screen {
+  width: 326px;
+  padding: 20px;
+  text-align: right;
+  overflow: auto;
+  font-size: 40px;
+  font-weight: 700;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.432);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+}
+
+.calc-button-row {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-button {
+  height: 65px;
+  flex-basis: 20%;
+  font-size: 24px;
+  font-family: inherit;
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.432);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 40px 30px rgba(35, 35, 35, 0.1);
+}
+
+.calc-button:last-child {
+  color: #fff;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.432);
+  background: #6420AA;
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+.calc-button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.calc-button:hover {
+  background-color: inherit;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.calc-button:active {
+  background-color: #5E1675;
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.triple {
+  flex-basis: 73%;
+}
